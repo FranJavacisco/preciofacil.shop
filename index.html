@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Precio Final</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="manifest" href="./assets/manifest.json">
+</head>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./assets/service-worker.js')
+                .then((registration) => {
+                    console.log('Service Worker registrado con éxito:', registration);
+                })
+                .catch((error) => {
+                    console.log('Error al registrar el Service Worker:', error);
+                });
+        });
+    }
+</script>
+
+
+<body>
+
+    <div class="logo-container">
+        <img src="./assets/img/ripley-logo.png" alt="Logo Ripley">
+    </div>
+
+    <h2>Calculadora de Precio Final</h2>
+
+    <div class="input-group">
+        <label for="precioOMP">Precio Otro Medio:</label>
+        <input type="number" id="precioOMP" step="0.01">
+    </div>
+    <div class="input-group">
+        <label for="precioTR">Precio Tarjeta Ripley:</label>
+        <input type="number" id="precioTR" step="0.01">
+    </div>
+    <div class="input-group">
+        <label for="precioGarantia">Precio Garantía:</label>
+        <input type="number" id="precioGarantia" step="0.01">
+    </div>
+    <div class="input-group">
+        <label for="descuento">% Descuento:</label>
+        <select id="descuento">
+            <option value="3">3%</option>
+            <option value="5">5%</option>
+            <option value="7">7%</option>
+            <option value="10">10%</option>
+        </select>
+    </div>
+
+    <div class="button-container">
+        <button class="calc-button" onclick="calcularPrecio()">Calcular Precio Final</button>
+        <button class="clear-button" onclick="borrarDatos()">Borrar Datos</button>
+    </div>
+
+    <h3>Resultados:</h3>
+    <div class="result-group">
+        <label for="precioFinalOMP">Precio Final OMP:</label>
+        <input type="text" id="precioFinalOMP" readonly>
+    </div>
+    <div class="result-group">
+        <label for="precioFinalTR">Precio Final TR:</label>
+        <input type="text" id="precioFinalTR" readonly>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

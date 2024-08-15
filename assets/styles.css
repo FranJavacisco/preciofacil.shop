@@ -1,0 +1,88 @@
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px; /* Espacio reducido entre el logo y las casillas */
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.input-group, .result-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    flex: 1;
+}
+
+input[type="number"], input[type="text"], select {
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    text-align: center;
+}
+
+.calc-button {
+    background-color: #FF0000; /* Rojo */
+}
+
+.calc-button:hover {
+    background-color: #E60000; /* Rojo oscuro */
+}
+
+.clear-button {
+    background-color: #FFDD00; /* Amarillo */
+}
+
+.clear-button:hover {
+    background-color: #FFCC00; /* Amarillo oscuro */
+}
+
+h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result-group input[type="text"] {
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
