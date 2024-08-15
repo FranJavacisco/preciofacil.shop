@@ -29,16 +29,6 @@ El objetivo de esta aplicación es proporcionar una herramienta útil y eficient
    ```bash
    git clone https://github.com/tuusuario/calculadora-precio-final.git
 
-   ## Contribuir
-
-¡Contribuciones son bienvenidas! Si deseas ayudar a mejorar esta aplicación, sigue estos pasos:
-
-1. **Haz un Fork**: Haz un fork del repositorio en GitHub.
-2. **Crea una Rama**: Crea una rama para tus cambios:
-   ```bash
-   git checkout -b nombre-de-tu-rama
-
-
 
 ## Contacto
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de panchodev@gmail.com o abre un issue en el repositorio.
