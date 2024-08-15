@@ -9,7 +9,8 @@ body {
 
 .logo-container {
     text-align: center;
-    margin-bottom: 10px; /* Espacio reducido entre el logo y las casillas */
+    margin-top: 0.1px;
+    margin-bottom: 0.5px; /* Espacio reducido entre el logo y las casillas */
 }
 
 h2 {
@@ -56,6 +57,7 @@ button {
 
 .calc-button {
     background-color: #FF0000; /* Rojo */
+    border-radius: 10px;
 }
 
 .calc-button:hover {
@@ -63,7 +65,8 @@ button {
 }
 
 .clear-button {
-    background-color: #FFDD00; /* Amarillo */
+    background-color: #ffdd00b6; /* Amarillo */
+    border-radius: 10px;
 }
 
 .clear-button:hover {
@@ -85,4 +88,25 @@ p {
     font-size: 18px;
     text-align: center;
     margin-top: 10px;
+}
+
+/* Estilo para el footer */
+footer {
+    font-size: 10px; /* Tamaño de fuente más pequeño */
+    text-align: left;  /* Alineación a la izquierda */
+    padding: 10px;    /* Espacio interno del footer */
+    margin: 20px 0;   /* Separación del footer con el resto del contenido */
+    background-color: #000000; /* Color de fondo claro para mayor visibilidad (opcional) */
+    color: #333;      /* Color del texto */
+}
+
+/* Estilo para los enlaces dentro del footer */
+footer a {
+    color: #007bff;  /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse sobre el enlace */
 }
