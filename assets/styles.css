@@ -84,10 +84,36 @@ h3 {
     color: #fff;
 }
 
-p {
-    font-size: 18px;
-    text-align: center;
-    margin-top: 10px;
+.result-explosion {
+    animation: explosion 1s ease-in-out;
+}
+
+@keyframes explosion {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 /* Estilo para el footer */
